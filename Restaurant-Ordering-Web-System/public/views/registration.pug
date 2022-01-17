@@ -1,0 +1,19 @@
+html
+	head
+		title registration
+		include ./partials/heads
+		
+	body
+		h3 Please register here:
+
+		p UserName: 
+				input(type="textbox" id="username" size="25")
+				br
+
+		p Password: 
+				input(type="password" id="password" size="25")
+				br
+
+		button(type="button" onclick="register()") register 
+
+		script(type='text/javascript', src='static/registration.js')

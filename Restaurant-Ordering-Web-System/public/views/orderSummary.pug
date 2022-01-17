@@ -1,0 +1,25 @@
+html 
+    head 
+        title Users
+        include ./partials/heads
+    
+    body(.restaurants)
+        div(#main)
+            h1 Order Summary:
+
+            p Username: #{order.username} 
+            
+            p User Id: #{order.userId} 
+
+            p Subtotal: #{order.subtotal}
+
+            p Total: #{order.total}
+
+            p Fee: #{order.fee}
+
+            p Tax: #{order.tax}
+
+            h3 Order:
+            
+            each key in Object.keys(orderedItems)
+                p Quantity: #{orderedItems[key].quantity} Name: #{orderedItems[key].name}

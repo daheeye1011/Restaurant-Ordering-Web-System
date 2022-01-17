@@ -1,0 +1,89 @@
+body {
+    margin: 0 25px !important;
+    background-color: beige !important;
+    font-family: 'Merienda', cursive !important;
+}
+
+.column {
+    float: left;
+}
+
+.left{
+    width: 10%;
+}
+
+.right {
+    width: 25%;
+}
+
+.middle {
+    width: 65%;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, .item-names {
+    background-color: #dfdfdf;
+}
+
+td, th {
+    padding: 10px;
+}
+
+td.number-column {
+    text-align: right;
+}
+
+td.info-column {
+    background-color: white;
+}
+
+#header {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    font-size: 32px;
+    background: #b7b7b7;
+}
+
+#header a {
+    margin: 0px 15px;
+}
+
+#headerMain{
+    border: thick double #3e4e55;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+#welcome {
+    padding: 5%;
+    width: 72%;
+    padding-left: 12%
+}
+
+#restaurant-select {
+    font-size: 21px;
+}
+
+#left, #middle, #right{
+    margin-top: 15px;
+}
+
+#main {
+    border: 2px solid rgb(71, 71, 71);
+}
+
+.action-btn {
+    cursor: pointer;
+}
+    
+   
+    

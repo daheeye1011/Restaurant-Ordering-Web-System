@@ -1,0 +1,35 @@
+html
+	head
+		title Order Form
+		include ./partials/heads
+		style.
+			#header a {
+				margin: 0px 10px 0px 0px ;
+			}
+			.column {
+				float: left;
+			}
+			.left{
+				width: 10%;
+			}
+			
+			.right {
+				width: 25%;
+			}
+
+			.middle {
+				width: 65%;
+			}
+
+	body(onload='init()')
+		br
+		br
+		select#restaurant-select
+		br
+		br
+		div#info
+		div#main
+		div#left.column.left
+		div#middle.column.middle
+		div#right.column.right
+		script(type='text/javascript', src='static/orderform.js')

@@ -1,0 +1,13 @@
+html 
+    head 
+        title Users
+        include ./partials/heads
+    
+    body(.restaurants)
+        div(#main)
+            h1 Following are Users : 
+            
+            each user in users
+                a(href="/user/" + user.id) #{user.username}
+                br
+                br

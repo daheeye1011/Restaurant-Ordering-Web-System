@@ -1,0 +1,32 @@
+html
+	head
+		title registration
+		include ./partials/heads
+		
+	body
+		h2#username  Profile For #{username} with id #{userId}:
+
+		
+		if username == session.username
+			h4  Privacy:
+			input(type='radio', name='privacy' id='privacy-true', value="true")
+			label(for='privacy-true') On
+
+			br
+			input(type='radio', name='privacy' id='privacy-false', value="false")
+			label(for='privacy-false') Off
+			br
+
+			button(type="button" onclick="save()") save 
+
+			script(type='text/javascript', src='/static/profile.js')
+
+		h4 #{username}'s Order history: 
+
+		each id in order
+			a(href="/orders/" + id) #{id}
+			br
+			br
+
+
+		

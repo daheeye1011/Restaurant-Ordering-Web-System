@@ -1,0 +1,31 @@
+
+div#header
+	if(session.loggedin)
+		a(href="/") Home
+		| 
+		a(href="/orderform") Order 
+		| 
+		a(href="/user/" + session.userId) Profile 
+		| 
+		a(href="/users") Users 
+		| 
+		a(href="/logout") 
+			span(class="fas fa-sign-in-alt mr-2" )
+			span(class="ml-2") Logout
+
+  
+	else 
+		a(href="/") Home
+		| 
+		a(href="/users") Users 
+		| 
+		a(href="/login") Login
+		| 
+		a(href="/registration") registration
+
+
+link(rel='stylesheet', href='../styles.css')
+link(rel='preconnect', href='https://fonts.googleapis.com')
+link(rel='preconnect', href='https://fonts.gstatic.com' crossorigin)
+link(rel="stylesheet", href='https://fonts.googleapis.com/css2?family=Merienda&display=swap')
+script(src="https://kit.fontawesome.com/839e480417.js" crossorigin="anonymous")
