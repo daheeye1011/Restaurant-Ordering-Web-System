@@ -1,7 +1,5 @@
-Student: Ismail Daheeye
-Student number: 101191414
-Prof: Dave McKenne
-Date submitted: 2021-12-10
+Restaurant-Ordering-Web-System
+Last Update: 2022-01-07
 Files: For the files, we have all the html files are done in pug. So we have home, registration, 
        login, logout, directory, profile, and headers pug files. We also have a store-server, database-initializer , registration, 
        login, logout, orderform, profile js files.
